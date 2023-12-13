@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE-edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/all.min.css">
+<title>Sign Up</title>
+<style>
+.wrapper{
+border-top: 03px solid green;
+}
+
+.wrapper a{
+text-decoration:none;
+color:green;
+}
+#passwordcheck p{
+display:none;
+}
+marguee{
+margin-top:8px;
+}
+
+
+</style>
+
+</head>
+<body class="bg-light">
+<marquee><h2 class='text-primary'>Register Here</h2></marquee>
+<div class="container">
+<div class="row mt-5">
+<div class="col-lg-5 bg-white m-auto rounded-top wrapper">
+<h2 class="text-center pt-3">Signup Now</h2>
+<p class="text-center text-muted lead mb-3">It's Free and Takes a Minute</p>
+
+<form action="RegistrationForm" method="post" class="form card" id="frm">
+<div class="input-group mb-3">
+<span class="input-group-text"><i class="fa fa-user"></i></span>
+<input type="text" class="form-control" placeholder="First Name" name="firstName">
+</div>
+<div class="input-group mb-3">
+<span class="input-group-text"><i class="fa fa-user"></i></span>
+<input type="text" class="form-control" placeholder="Last Name" name="lastName">
+</div>
+<div class="input-group mb-3">
+<span class="input-group-text"><i class="fa fa-envelope"></i></span>
+<input type="email" class="form-control" placeholder="Email" name="email">
+</div>
+<div class="input-group mb-3">
+<span class="input-group-text"><i class="fa fa-lock"></i></span>
+<input type="password" class="form-control" placeholder="Password" name="password" id="pass">
+</div>
+<div class="input-group mb-3">
+<span class="input-group-text"><i class="fa fa-lock"></i></span>
+<input type="password" class="form-control" placeholder="Confirm Password" name="confirmPassword" id="cnfpass">
+</div>
+<div id="passwordcheck"><p>Check The Password</p></div>
+<div class="d-grid">
+<button onclick="myFunction()" type="submit" class="btn btn-success" ">Signup Now</button>
+<p class="text-center text-muted mt-2">
+When You Register by Clicking Signup Button, You Agree to our
+<a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>
+</p>
+<p class="text-center">
+Already Have an Account ? <a href="login.html">Login Here</a></p>
+</div>
+
+</form>
+</div>
+</div>
+</div>
+<script>
+function myFunction() {
+	var pass = document.getElementById("pass").value;
+	var cnfpass = document.getElementById("cnfpass").value;
+	if (pass==cnfpass) {
+		alert("Registraion Confirmed..");
+		
+		
+	}else{	
+		alert("Check The  Password..");
+	}
+	
+	
+}
+
+</script>
+</body>
+</html>

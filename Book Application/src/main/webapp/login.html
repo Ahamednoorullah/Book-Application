@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE-edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/all.min.css">
+<title>Login</title>
+<style>
+.wrapper{
+border-top: 03px solid green;
+}
+.wrapper a{
+text-docoration:none;
+color:green;
+}
+#loginfail{
+display:none;
+}
+
+
+</style>
+
+</head>
+<body class="bg-light">
+<div class="container">
+<div class="row mt-5">
+<div class="col-lg-5 bg-white m-auto rounded-top wrapper">
+<h2 class="text-center pt-3">Login Now</h2>
+<p class="text-center text-muted lead mb-3">It's Free and Takes a Minute</p>
+
+<form action="UserLogin" method="post">
+<div class="input-group mb-3">
+<span class="input-group-text"><i class="fa fa-envelope"></i></span>
+<input type="email" class="form-control" placeholder="Email" name="email">
+</div>
+<div class="input-group mb-3">
+<span class="input-group-text"><i class="fa fa-lock"></i></span>
+<input type="password" class="form-control" placeholder="Password" name="password">
+</div>
+<p id="loginfail">Login Failed</p>
+<div class="d-grid">
+<button type="submit" class="btn btn-success">Login Now</button>
+
+<p class="text-center">
+Register Now for Free by Clicking <a href="Registration.html">Register Now</a></p>
+<a href="Home.html"><i class="fa-solid fa-house"></i>Home</a>
+</div>
+
+</form>
+</div>
+</div>
+</div>
+<script>
+function loginfail(){
+document.getElementById("loginfail").style.display="block";
+
+}
+</script>
+</body>
+</html>
